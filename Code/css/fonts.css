@@ -1,0 +1,13 @@
+/* Webfont: Lato-Black */@font-face {
+    font-family: 'Nunito';
+    src: url('../fonts/Nunito/Nunito-Regular.woff'); /* IE9 Compat Modes */
+    src: url('../fonts/Nunito/Nunito-Regular.woff') format('woff'), /* IE6-IE8 */
+         url('../fonts/Nunito/Nunito-Regular.woff2') format('woff2'); /* Modern Browsers */
+}
+
+/* Webfont: Lato-BlackItalic */@font-face {
+    font-family: 'NunitoBold';
+    src: url('../fonts/Nunito/Nunito-Bold.woff'); /* IE9 Compat Modes */
+    src: url('../fonts/Nunito/Nunito-Bold.woff') format('woff'), /* IE6-IE8 */
+         url('../fonts/Nunito/Nunito-Bold.woff2') format('woff2'); /* Modern Browsers */
+}

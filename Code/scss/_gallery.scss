@@ -1,0 +1,135 @@
+.gallery_area{
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding-top: 70px;
+    left: 0;
+    bottom: 0;
+    background: #fff;
+    opacity: 1;
+    z-index: 99;
+    overflow: auto;
+    @media (max-width: 480px) {
+        padding-top: 100px !important;
+    }
+    .main_tittle{
+        p{
+            font-size: 12px;
+            opacity: 0.5;
+            text-transform: uppercase;
+        }
+        h2{
+            font-family: 'NunitoBold';
+            font-size: 28px;
+            margin-top: -10px;
+        }
+    }
+    .portfolio-filter{
+        ul{
+            list-style-type: none;
+            padding: 0;
+            margin-top: 40px;
+            li{
+                margin: 0 40px 0 0;
+                text-transform: uppercase;
+                opacity: 0.7;
+                font-size: 14px;
+                span{
+                    cursor: pointer;
+                    @include transition;
+                    &:hover{
+                        color: $primary-color;
+                    }
+                }
+                span.active{
+                    color: #fff;
+                    background: $primary-color;
+                    padding: 5px 20px;
+                    border-radius: 100px;
+                }
+            }
+        }
+    }
+    .project{
+        width: 100%;
+        height: 285px;
+        margin-bottom: 30px;
+        position: relative;
+        z-index: 0;
+        background-size: cover;
+        &.img-2{
+            height: 600px;
+             @media (max-width: 480px){
+                height: 285px;
+            }
+            .text{
+                max-width: 45%;
+                z-index: 1;
+                h3{
+                    font-size: 22px;
+                    a{
+                        color: $white;
+                    }
+                }
+                span{
+                    color: rgba(255,255,255,.8);
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                }
+                 @media (max-width: 480px){
+                    max-width: 100%;
+                    opacity: 1;
+                    span{
+                        color: rgba(255,255,255,.8);
+                    }
+                }
+            }
+        }
+        .overlay{
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            content: '';
+            opacity: 0;
+            background: $primary-color;
+            z-index: -1;
+            @include transition(.3s);
+             @media (max-width: 480px){
+                opacity: .2;
+            }
+        }
+        .text{
+            max-width: 80%;
+            z-index: 1;
+            opacity: 0;
+            @include transition(.3s);
+            h3{
+                font-size: 20px;
+                a{
+                    color: #fff;
+                }
+            }
+            span{
+                color: rgba(255,255,255,.5);
+                text-transform: uppercase;
+                letter-spacing: 2px;
+            }
+             @media (max-width: 480px){
+                opacity: 1;
+                span{
+                    color: rgba(255,255,255,.8);
+                }
+            }
+        }
+        &:hover, &:focus{
+            .overlay{
+                opacity: .9;
+            }
+            .text{
+                opacity: 1;
+            }
+        }
+    }
+}

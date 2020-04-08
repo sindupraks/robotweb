@@ -1,0 +1,602 @@
+/*font Variables*/
+/*Color Variables*/
+/*=================== fonts ====================*/
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
+.gradient-bg {
+  background: linear-gradient(90deg, #0090c7 0%, #990099 100%);
+}
+
+.text-primary {
+  color: #0090c7;
+}
+
+.navbar {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 999;
+  background: transparent;
+  padding-top: 20px;
+}
+.navbar .container {
+  position: relative;
+  padding-left: 0;
+}
+.navbar .toggler {
+  position: absolute;
+  right: 0;
+  transition: all 0.4s ease 0s;
+}
+.navbar .toggler .toggler--bg {
+  width: 40px;
+  height: 40px;
+  background: #0090c7;
+  border-radius: 100%;
+  cursor: pointer;
+}
+.navbar .toggler .toggler--bg .btn--toggler {
+  width: 16px;
+  height: 3px;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.4s ease 0s;
+}
+.navbar .toggler .toggler--bg .btn--toggler::before, .navbar .toggler .toggler--bg .btn--toggler::after {
+  content: "";
+  display: block;
+  clear: both;
+  position: absolute;
+  width: 16px;
+  height: 3px;
+  background: #fff;
+  transition: all 0.4s ease 0s;
+}
+.navbar .toggler .toggler--bg .btn--toggler::before {
+  top: -6px;
+}
+.navbar .toggler .toggler--bg .btn--toggler::after {
+  top: 6px;
+}
+.navbar #menu {
+  height: 100%;
+  position: fixed;
+  width: 0;
+  top: 0;
+  right: 0;
+  padding-top: 100px;
+  background-color: rgba(0, 0, 0, 0.7);
+  overflow-x: hidden;
+  transition: all 0.4s ease 0s;
+}
+.navbar #menu a {
+  display: block;
+  padding: 8px 30px;
+  font-size: 18px;
+  text-decoration: none;
+  color: #ccc;
+  margin: 20px 25px;
+  font-family: "NunitoBold";
+  transition: all 0.4s ease 0s;
+}
+.navbar #menu a:hover {
+  color: #0090c7;
+}
+.navbar #menu .close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 1;
+  font-family: "NunitoBold";
+  font-size: 25px;
+}
+.navbar .show {
+  width: 280px !important;
+}
+.navbar .active {
+  color: #fff;
+  background: #0090c7;
+  font-family: "NunitoBold";
+  border-radius: 100px;
+  transition: all 0.4s ease 0s;
+}
+.navbar .active:hover {
+  color: #fff !important;
+}
+
+#home .jumbotron {
+  background: url("../img/bg.jpg");
+  padding: 0;
+  margin: 0;
+  background-size: cover;
+  position: relative;
+  bottom: 0;
+  height: 100vh;
+  min-height: 350px;
+  overflow: hidden;
+  font-family: "Nunito";
+  border-radius: 0;
+}
+@media (max-width: 480px) {
+  #home .jumbotron {
+    background-position-x: -300px;
+  }
+}
+#home .jumbotron::after {
+  content: "";
+  min-width: 360px;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #000;
+  opacity: 0.6;
+}
+#home .container {
+  position: relative;
+  min-height: 400px;
+}
+#home .container .carousel {
+  position: static;
+  height: 100vh;
+  text-align: center;
+  margin-top: -100vh;
+  font-family: "Nunito";
+}
+#home .container .carousel .carousel-indicators {
+  bottom: 15px;
+}
+@media (max-width: 576px) {
+  #home .container .carousel .carousel-indicators {
+    top: 70% !important;
+  }
+}
+#home .container .carousel .carousel-indicators li {
+  border: 1px solid #fff;
+  border-radius: 100%;
+  background: rgba(0, 0, 0, 0);
+  width: 20px !important;
+  height: 20px !important;
+}
+#home .container .carousel .carousel-indicators li.active {
+  border-color: #0090c7;
+  background: #0090c7;
+}
+#home .container .carousel .carousel-inner .carousel-item .first-slide h1 {
+  font-size: 72px;
+  text-transform: uppercase;
+  font-family: "NunitoBold";
+}
+@media (max-width: 768px) {
+  #home .container .carousel .carousel-inner .carousel-item .first-slide h1 {
+    font-size: 48px;
+  }
+}
+#home .container .carousel .carousel-inner .carousel-item .first-slide p {
+  font-size: 24px;
+  opacity: 0.7;
+}
+@media (max-width: 576px) {
+  #home .container .carousel .carousel-inner .carousel-item .first-slide p {
+    font-size: 12px;
+  }
+}
+#home .container .carousel .carousel-inner .carousel-item .second-slide p {
+  font-size: 24px;
+  opacity: 0.7;
+  text-transform: uppercase;
+}
+@media (max-width: 576px) {
+  #home .container .carousel .carousel-inner .carousel-item .second-slide p {
+    font-size: 12px;
+  }
+}
+#home .container .carousel .carousel-inner .carousel-item .second-slide h2 {
+  text-transform: uppercase;
+  font-size: 38px;
+  font-family: "NunitoBold";
+}
+@media (max-width: 576px) {
+  #home .container .carousel .carousel-inner .carousel-item .second-slide h2 {
+    font-size: 24px;
+  }
+}
+#home .container .carousel .carousel-inner .carousel-item .second-slide span {
+  font-size: 18px;
+  opacity: 0.7;
+}
+@media (max-width: 576px) {
+  #home .container .carousel .carousel-inner .carousel-item .second-slide span {
+    font-size: 12px;
+  }
+}
+#home .container .carousel .carousel-inner .carousel-item .third-slide {
+  margin: 50px auto 0 auto;
+  width: 400px;
+}
+@media (max-width: 576px) {
+  #home .container .carousel .carousel-inner .carousel-item .third-slide {
+    width: 100%;
+  }
+}
+#home .container .carousel .carousel-inner .carousel-item .third-slide span {
+  font-size: 18px;
+  opacity: 0.7;
+}
+@media (max-width: 576px) {
+  #home .container .carousel .carousel-inner .carousel-item .third-slide span {
+    font-size: 12px;
+  }
+}
+#home .container .carousel .carousel-inner .carousel-item .third-slide button {
+  display: block;
+  padding: 5px 50px;
+  border-radius: 100px;
+  font-family: "Nunito";
+  text-transform: uppercase;
+  cursor: pointer;
+  background: #0090c7;
+  color: #fff;
+  margin: 20px auto 0 auto;
+}
+#home .container .carousel .carousel-inner .carousel-item .third-slide button:hover, #home .container .carousel .carousel-inner .carousel-item .third-slide button:focus {
+  background: darkcyan;
+}
+@media (max-width: 576px) {
+  #home .container .carousel .carousel-inner .carousel-item .third-slide button {
+    font-size: 12px;
+    padding: 5px 50px;
+  }
+}
+#home .container .carousel .control-container {
+  border-radius: 100%;
+  border: 2px solid #fff;
+  width: 40px;
+  height: 40px;
+  top: 50vh;
+  opacity: 1;
+  transition: all 0.4s ease 0s;
+}
+#home .container .carousel .control-container i {
+  font-size: 14px;
+}
+#home .container .carousel .control-container:hover, #home .container .carousel .control-container:active {
+  border-color: #0090c7;
+  background: #0090c7;
+}
+@media (max-width: 576px) {
+  #home .container .carousel .control-container {
+    border-color: rgba(0, 0, 0, 0) !important;
+    top: 68%;
+  }
+}
+#home .container .carousel .phone {
+  position: absolute;
+  color: #fff;
+  bottom: 0;
+  left: 0;
+}
+@media (max-width: 576px) {
+  #home .container .carousel .phone {
+    left: 20px;
+  }
+}
+#home .container .carousel .phone p {
+  font-size: 18px;
+}
+@media (max-width: 576px) {
+  #home .container .carousel .phone p {
+    font-size: 12px;
+  }
+}
+#home .container .carousel .gallery-link {
+  position: absolute;
+  color: #fff;
+  bottom: 15px;
+  right: 0;
+}
+@media (max-width: 576px) {
+  #home .container .carousel .gallery-link {
+    right: 20px;
+  }
+}
+#home .container .carousel .gallery-link a {
+  text-decoration: none;
+}
+#home .container .carousel .gallery-link a:hover {
+  color: darkcyan;
+}
+@media (max-width: 576px) {
+  #home .container .carousel .gallery-link a {
+    font-size: 12px;
+  }
+}
+
+#about {
+  height: 100vh;
+  font-family: "Nunito";
+}
+#about .jumbotron {
+  height: 60vh;
+  background: rgba(0, 0, 0, 0);
+}
+#about .jumbotron .row {
+  position: relative;
+  min-width: 320px;
+}
+#about .jumbotron .row .col-lg {
+  height: 100%;
+  padding: 0;
+}
+#about .jumbotron .row .col-lg .pp {
+  width: 300px;
+  height: 300px;
+  border: 1px solid #c9c9c9;
+  border-radius: 100%;
+}
+@media (max-width: 768px) {
+  #about .jumbotron .row .col-lg .pp {
+    margin: auto;
+  }
+}
+#about .jumbotron .row .col-lg .pp:after {
+  content: "";
+  display: block;
+  position: relative;
+  width: 230px;
+  height: 230px;
+  background-size: cover;
+  top: 35px;
+  left: 35px;
+  background: url(../img/about.jpg);
+  border-radius: 100%;
+}
+#about .jumbotron .row .about-content {
+  position: relative;
+  height: 300px;
+}
+#about .jumbotron .row .about-content p {
+  font-size: 12px;
+  opacity: 0.5;
+  text-transform: uppercase;
+}
+#about .jumbotron .row .about-content h1 {
+  font-family: "NunitoBold";
+  font-size: 28px;
+  margin-top: -10px;
+}
+#about .jumbotron .row .about-content h1 span {
+  display: inline;
+  font-size: 28px;
+}
+#about .jumbotron .row .about-content span {
+  opacity: 0.7;
+  display: block;
+  margin-top: 20px;
+  font-size: 14px;
+}
+#about .jumbotron .row .about-content button {
+  position: absolute;
+  bottom: 10px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  padding: 5px 50px;
+  border-radius: 100px;
+  font-family: "Nunito";
+  text-transform: uppercase;
+  cursor: pointer;
+  background: #0090c7;
+  color: #fff;
+  transition: all 0.4s ease 0s;
+}
+#about .jumbotron .row .about-content button:hover, #about .jumbotron .row .about-content button:focus {
+  background: darkcyan;
+}
+@media (max-width: 768px) {
+  #about .jumbotron .row .about-content button {
+    bottom: 0;
+  }
+}
+@media (max-width: 480px) {
+  #about .jumbotron .row .about-content button {
+    bottom: -50px;
+  }
+}
+@media (max-width: 992px) {
+  #about .jumbotron .service-container {
+    top: 100px;
+  }
+}
+#about .jumbotron .service-container .panel-container {
+  height: 200px;
+  text-align: center;
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.4s ease 0s;
+}
+@media (max-width: 992px) {
+  #about .jumbotron .service-container .panel-container {
+    margin: 20px 0;
+  }
+}
+#about .jumbotron .service-container .panel-container .panel-service i {
+  color: #0090c7;
+  font-size: 32px;
+}
+#about .jumbotron .service-container .panel-container .panel-service p {
+  text-transform: uppercase;
+  font-family: "NunitoBold";
+  font-size: 14px;
+  margin-top: 20px;
+}
+#about .jumbotron .service-container .panel-container .panel-service a {
+  text-decoration: none;
+  color: #fff;
+  display: none;
+  font-size: 12px;
+}
+#about .jumbotron .service-container .panel-container .panel-service a:after {
+  content: "";
+  display: block;
+  width: 50%;
+  margin: auto;
+  background: #fff;
+  height: 2px;
+}
+#about .jumbotron .service-container .panel-container:hover {
+  background: #0090c7;
+  color: #fff !important;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+#about .jumbotron .service-container .panel-container:hover i {
+  display: none;
+}
+#about .jumbotron .service-container .panel-container:hover p {
+  font-size: 18px;
+}
+#about .jumbotron .service-container .panel-container:hover a {
+  display: block;
+}
+
+.gallery_area {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding-top: 70px;
+  left: 0;
+  bottom: 0;
+  background: #fff;
+  opacity: 1;
+  z-index: 99;
+  overflow: auto;
+}
+@media (max-width: 480px) {
+  .gallery_area {
+    padding-top: 100px !important;
+  }
+}
+.gallery_area .main_tittle p {
+  font-size: 12px;
+  opacity: 0.5;
+  text-transform: uppercase;
+}
+.gallery_area .main_tittle h2 {
+  font-family: "NunitoBold";
+  font-size: 28px;
+  margin-top: -10px;
+}
+.gallery_area .portfolio-filter ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 40px;
+}
+.gallery_area .portfolio-filter ul li {
+  margin: 0 40px 0 0;
+  text-transform: uppercase;
+  opacity: 0.7;
+  font-size: 14px;
+}
+.gallery_area .portfolio-filter ul li span {
+  cursor: pointer;
+  transition: all 0.4s ease 0s;
+}
+.gallery_area .portfolio-filter ul li span:hover {
+  color: #0090c7;
+}
+.gallery_area .portfolio-filter ul li span.active {
+  color: #fff;
+  background: #0090c7;
+  padding: 5px 20px;
+  border-radius: 100px;
+}
+.gallery_area .project {
+  width: 100%;
+  height: 285px;
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 0;
+  background-size: cover;
+}
+.gallery_area .project.img-2 {
+  height: 600px;
+}
+@media (max-width: 480px) {
+  .gallery_area .project.img-2 {
+    height: 285px;
+  }
+}
+.gallery_area .project.img-2 .text {
+  max-width: 45%;
+  z-index: 1;
+}
+.gallery_area .project.img-2 .text h3 {
+  font-size: 22px;
+}
+.gallery_area .project.img-2 .text h3 a {
+  color: #fff;
+}
+.gallery_area .project.img-2 .text span {
+  color: rgba(255, 255, 255, 0.8);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+@media (max-width: 480px) {
+  .gallery_area .project.img-2 .text {
+    max-width: 100%;
+    opacity: 1;
+  }
+  .gallery_area .project.img-2 .text span {
+    color: rgba(255, 255, 255, 0.8);
+  }
+}
+.gallery_area .project .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: "";
+  opacity: 0;
+  background: #0090c7;
+  z-index: -1;
+  transition: 0.3s;
+}
+@media (max-width: 480px) {
+  .gallery_area .project .overlay {
+    opacity: 0.2;
+  }
+}
+.gallery_area .project .text {
+  max-width: 80%;
+  z-index: 1;
+  opacity: 0;
+  transition: 0.3s;
+}
+.gallery_area .project .text h3 {
+  font-size: 20px;
+}
+.gallery_area .project .text h3 a {
+  color: #fff;
+}
+.gallery_area .project .text span {
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+@media (max-width: 480px) {
+  .gallery_area .project .text {
+    opacity: 1;
+  }
+  .gallery_area .project .text span {
+    color: rgba(255, 255, 255, 0.8);
+  }
+}
+.gallery_area .project:hover .overlay, .gallery_area .project:focus .overlay {
+  opacity: 0.9;
+}
+.gallery_area .project:hover .text, .gallery_area .project:focus .text {
+  opacity: 1;
+}

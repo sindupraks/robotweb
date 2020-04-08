@@ -1,0 +1,95 @@
+.navbar{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 999;
+    background: transparent;
+    padding-top: 20px;
+    .container{
+        position: relative;
+        padding-left: 0;
+    }
+    .toggler{
+        position: absolute;
+        right: 0;
+        @include transition;
+        .toggler--bg{
+            width: 40px;
+            height: 40px;
+            background: $primary-color;
+            border-radius: 100%;
+            cursor: pointer;
+            .btn--toggler{
+                width: 16px;
+                height: 3px;
+                background: #fff;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                @include transition;
+                &::before, &::after{
+                    content: '';
+                    display: block;
+                    clear: both;
+                    position: absolute;
+                    width: 16px;
+                    height: 3px;
+                    background: #fff;
+                    @include transition;
+                }
+                &::before{
+                    top: -6px;
+                }
+                &::after{
+                    top: 6px;
+                }
+            }
+        }
+    }
+    #menu{
+        height: 100%;
+        position: fixed;
+        width: 0;
+        top: 0;
+        right: 0;
+        padding-top: 100px;
+        background-color: rgba(0,0,0,0.7);
+        overflow-x: hidden;
+        @include transition;
+        a{
+            display: block;
+            padding: 8px 30px;
+            font-size: 18px;
+            text-decoration: none;
+            color: #ccc;
+            margin: 20px 25px;
+            font-family: "NunitoBold";
+            @include transition;
+            &:hover{
+                color: $primary-color;
+            }
+        }
+        .close{
+            position: absolute;
+            top: 0;
+            right: 0;
+            opacity: 1;
+            font-family: "NunitoBold";
+            font-size: 25px;
+        }
+    }
+    .show{
+        width: 280px !important;
+    }
+    .active{
+        color: #fff;
+        background: $primary-color;
+        font-family: "NunitoBold";
+        border-radius: 100px;
+        @include transition;
+        &:hover{
+            color: #fff !important;
+        }
+    }
+}

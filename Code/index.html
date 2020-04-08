@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+      <!--================ Start Header Area =================-->
+      <nav class="navbar navbar-expand-lg">
+          <div class="container">
+            <a class="navbar-brand text-white" href="#">LOGO</a>
+            <div class="toggler">
+              <div class="toggler--bg">
+                <div class="btn--toggler"></div></a>
+              </div>
+            </div>
+            <div id="menu">
+              <a href="#" class="close">X</a>
+              <a href="#home" class="page-scroll" id="home-link"><i class="fa fa-home mr-5"></i>Home</a>
+              <a href="#about" class="page-scroll" id="about-link"><i class="fa fa-home mr-5"></i>About</a>
+              <a href="#gallery" class="page-scroll" id="gallery-link"><i class="fa fa-film mr-5"></i>Gallery</a>
+            </div>
+          </div>
+      </nav>
+      <!--================ End Header Area =================-->
+
+
+      <!--================ Start Home Area =================-->
+      <section id="home">
+        <div class="jumbotron home--bg animated fadeIn"></div>
+        <div class="container">
+          <div id="carouselIndicators" class="carousel slide d-flex align-items-center" data-ride="carousel">
+            <div class="carousel-indicators">
+              <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselIndicators" data-slide-to="1" class="ml-2 mr-2"></li>
+              <li data-target="#carouselIndicators" data-slide-to="2"></li>
+            </div>
+            <div class="carousel-inner text-white">
+              <div class="carousel-item active">
+                <div class="first-slide">
+                    <p>PHOTOGRAPHER</p>
+                    <h1>ikbal <span class="text-primary">robot</span></h1>
+                </div>
+              </div>
+              <div class="carousel-item">
+                  <div class="second-slide">
+                    <p>my name's</p>
+                    <h2>muhammad ikbal oktiana</h2>
+                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. </span>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                  <div class="third-slide">
+                      <span>Quasi ab perferendis culpa nam incidunt pariatur excepturi quod neque, earum atque veritatis dignissimos cum beatae maxime sapiente et at non? Soluta. </span>
+                      <a href='#about' class="page-scroll"><button class="btn btn-primary">about</button></a>
+                  </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev control-container d-flex justify-content-center align-items-center" href="#carouselIndicators" role="button" data-slide="prev">
+              <i class="fa fa-chevron-left"></i>
+            </a>
+            <a class="carousel-control-next control-container" href="#carouselIndicators" role="button" data-slide="next">
+              <i class="fa fa-chevron-right"></i>
+            </a>
+            <div class="phone">
+              <p><i class="fa fa-phone mr-3"></i>0800 0000 0000</p>
+            </div>
+            <div class="gallery-link">
+              <a class="text-uppercase" href="#">my gallery</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--================ End Home Area =================-->
+
+      <!--================ Start Abou Area =================-->
+      <section id="about">
+        <div class="jumbotron">
+          <div class="container">
+            <div class="row about-container">
+              <div class="col-lg about-picture mb-5">
+                <div class="pp"></div>
+              </div>
+              <div class="col-lg about-content">
+                <p>about me</p>
+                <h1>Freezing a <span class="text-primary beauty">beauty</span> moment with me</h1>
+                <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At quisquam, nostrum nulla maxime eos amet debitis suscipit sit?<br><br>Amet vero et voluptatem mollitia vel sit maxime esse suscipit ipsum quia. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta fugiat esse nemo perferendis distinctio eius deserunt</span>
+                <button class="btn btn-primary">gallery</button>
+              </div>
+            </div>
+            <div class="row service-container d-flex justify-content-between mt-3">
+              <div class="col-lg-3 panel-container d-flex align-items-center justify-content-center">
+                <div class="panel-service">
+                  <i class="fa fa-heart"></i>
+                  <p>weeding<br>photography</p>
+                  <a href="#">Learn more</a>
+                </div>
+              </div>
+              <div class="col-lg-3 panel-container d-flex align-items-center justify-content-center">
+                <div class="panel-service">
+                  <i class="fa fa-film"></i>
+                  <p>cinematography</p>
+                  <a href="#">Learn more</a>
+                </div>
+              </div>
+              <div class="col-lg-3 panel-container d-flex align-items-center justify-content-center">
+                <div class="panel-service">
+                  <i class="fa fa-female"></i>
+                  <p>fashion<br>photography</p>
+                  <a href="#">Learn more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="gallery" class="gallery_area d-none">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="main_tittle">
+                <p class="top_text">My Portfolio</p>
+                <h2>Let's Start Introduction <br>
+                  With Amazing Photos </h2>
+              </div>
+            </div>
+          </div>
+    
+          <div class="filters portfolio-filter">
+            <ul class="d-flex">
+              <li><span class="tablink active" onclick="openPhoto(event, 'weeding')">Weeding</span</li>
+              <li><span class="tablink" onclick="openPhoto(event, 'fashion')">Fashion</span></li>
+              <li><span class="tablink">cinematography</span></li>
+            </ul>
+          </div>
+        
+
+          <div class="filters-content animated fadeInUp">
+            <div class="row portfolio-grid">
+
+              <!-- Weeding Grup ---------------------- -->
+              <div class="row photo mt-3" id="weeding">
+                <div class="col-md-8">
+                  <div class="project img img-2 d-flex justify-content-center align-items-center" style="background-image: url(img/portfolio/project-1.jpg);">
+                    <div class="overlay"></div>
+                    <div class="text text-center p-4">
+                      <h3><a href="#">Branding &amp; Illustration Design</a></h3>
+                      <span>Web Design</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="project img d-flex justify-content-center align-items-center" style="background-image: url(img/portfolio/project-2.jpg);">
+                        <div class="overlay"></div>
+                        <div class="text text-center p-4">
+                          <h3><a href="#">Branding &amp; Illustration Design</a></h3>
+                          <span>Web Design</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(img/portfolio/project-3.jpg);">
+                        <div class="overlay"></div>
+                        <div class="text text-center p-4">
+                          <h3><a href="#">Branding &amp; Illustration Design</a></h3>
+                          <span>Web Design</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(img/portfolio/project-4.jpg);">
+                    <div class="overlay"></div>
+                    <div class="text text-center p-4">
+                      <h3><a href="#">Branding &amp; Illustration Design</a></h3>
+                      <span>Web Design</span>
+                    </div>
+                  </div>
+                  </div>
+                  <div class="col-md-8">
+                  <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(img/portfolio/project-5.jpg);">
+                    <div class="overlay"></div>
+                    <div class="text text-center p-4">
+                      <h3><a href="#">Branding &amp; Illustration Design</a></h3>
+                      <span>Web Design</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--End Weeding Grup ---------------------- -->
+
+
+              <!-- Fashion Grup ---------------------- -->
+              <div class="row photo d-none mt-3" id="fashion">
+                <div class="col-md-8">
+                  <div class="project img ftco-animate img-2 d-flex justify-content-center align-items-center" style="background-image: url(img/portfolio/project-3.jpg);">
+                    <div class="overlay"></div>
+                    <div class="text text-center p-4">
+                      <h3><a href="#">Branding &amp; Illustration Design</a></h3>
+                      <span>Web Design</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(img/portfolio/project-3.jpg);">
+                        <div class="overlay"></div>
+                        <div class="text text-center p-4">
+                          <h3><a href="#">Branding &amp; Illustration Design</a></h3>
+                          <span>Web Design</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(img/portfolio/project-3.jpg);">
+                        <div class="overlay"></div>
+                        <div class="text text-center p-4">
+                          <h3><a href="#">Branding &amp; Illustration Design</a></h3>
+                          <span>Web Design</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(img/portfolio/project-3.jpg);">
+                    <div class="overlay"></div>
+                    <div class="text text-center p-4">
+                      <h3><a href="#">Branding &amp; Illustration Design</a></h3>
+                      <span>Web Design</span>
+                    </div>
+                  </div>
+                  </div>
+                  <div class="col-md-8">
+                  <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(img/portfolio/project-3.jpg);">
+                    <div class="overlay"></div>
+                    <div class="text text-center p-4">
+                      <h3><a href="#">Branding &amp; Illustration Design</a></h3>
+                      <span>Web Design</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--End Weeding Grup ---------------------- -->
+
+            </div>
+          </div>
+        </div>
+      </section>
+  
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/ScrollMagic-v2.0.7-37/ScrollMagic.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
